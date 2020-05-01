@@ -22,7 +22,7 @@ progressbar.step(5)
 value = DoubleVar()
 progressbar.config(variable = value)
 
-scale = ttk.Scale(root, orient = HORIZONTAL,
+scale = ttk.Scale(root, orient = VERTICAL,
 		  length = 400, variable = value,
 		  from_ = 0.0, to = 11.0)
 scale.pack()
