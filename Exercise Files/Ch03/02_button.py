@@ -20,10 +20,16 @@ button.state(['disabled'])
 print(button.instate(['disabled']))
 button.state(['!disabled'])
 print(button.instate(['!disabled']))
+button.state(['!disabled'])
+print(button.instate(['!disabled']))
+button.state(['!disabled'])
+print(button.instate(['!disabled']))
+button.state(['!disabled'])
+print(button.instate(['!disabled']))
 
 logo = PhotoImage(file = 'python_logo.gif') # change path to image as necessary
 button.config(image = logo, compound = LEFT)
-small_logo = logo.subsample(5, 5)
+small_logo = logo.subsample(8, 8)
 button.config(image = small_logo)
 
 root.mainloop()
