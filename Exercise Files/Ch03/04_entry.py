@@ -16,8 +16,8 @@ entry.delete(0, END)
 entry.insert(0, 'Enter your password')
 
 entry.config(show = '*')
-entry.state(['disabled'])
-entry.state(['readonly'])
+entry.state(['!disabled'])
+entry.state(['!readonly'])
 entry.state(['!disabled'])
 
 root.mainloop()
