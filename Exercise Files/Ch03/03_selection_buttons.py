@@ -27,6 +27,7 @@ ttk.Radiobutton(root, text = 'Sausage', variable = breakfast,
 		value = 'Sausage').pack()
 ttk.Radiobutton(root, text = 'SPAM', variable = breakfast,
 		value = 'SPAM').pack()
+ttk.Radiobutton(root, text= 'Boom', variable = breakfast, value= 'Boom').pack()
 print(breakfast.get()) # Note: value will be empty if no selection is made
 
 checkbutton.config(textvariable = breakfast)
