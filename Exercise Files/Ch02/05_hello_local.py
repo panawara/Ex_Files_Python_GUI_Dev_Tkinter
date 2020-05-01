@@ -10,13 +10,13 @@ class HelloApp:
     def __init__(self, master):
 
         self.label = ttk.Label(master, text = "Hello, Tkinter!")
-        self.label.grid(row = 0, column = 0, columnspan = 2)
+        self.label.grid(row = 5, column = 5, columnspan = 2)
         
         ttk.Button(master, text = "Texas",
-                   command = self.texas_hello).grid(row = 1, column = 0)
+                   command = self.texas_hello).grid(row = 5, column = 0)
 
         ttk.Button(master, text = "Hawaii",
-                   command = self.hawaii_hello).grid(row = 1, column = 1)
+                   command = self.hawaii_hello).grid(row = 5, column = 1)
 
     def texas_hello(self):
         self.label.config(text = 'Howdy, Tkinter!')
